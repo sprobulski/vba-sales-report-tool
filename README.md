@@ -4,9 +4,8 @@
 Narzędzie stanowi rozwiązanie opracowane w języku VBA, przeznaczone do automatyzacji procesów raportowania sprzedaży. Aplikacja umożliwia konsolidację rozproszonych danych z wielu plików tekstowych oraz ich automatyczne przekształcenie w interaktywny panel menedżerski. Projekt bazuje na danych sprzedażowych marek elektroniki użytkowej, takich jak Sony, Philips, Panasonic, Toshiba, LG oraz Samsung
 
 ## Kluczowe funkcjonalności
-* **Zautomatyzowany import danych**: System pozwala na masowe wczytywanie plików tekstowych przy użyciu obiektów `FileDialog`, obsługując kodowanie UTF-8 dla zapewnienia integralności polskich znaków
-* **Przetwarzanie i standaryzacja**: Kod automatycznie parsuje złożone ciągi znaków, rozdzielając informacje o województwie i mieście, co umożliwia precyzyjną analizę regionalną
-* **Zaawansowana analityka trendów**: Algorytm wylicza nachylenie linii trendu (funkcja `Slope`) dla szeregów czasowych, dynamicznie modyfikując atrybuty wizualne wykresów w zależności od kierunku zmian sprzedaży
+* **Zautomatyzowany import danych**: System pozwala na masowe wczytywanie plików tekstowych.
+* **Zaawansowana analityka trendów**: Algorytm wylicza nachylenie linii trendu dla szeregów czasowych, dynamicznie modyfikując atrybuty wizualne wykresów w zależności od kierunku zmian sprzedaży
 * **Interaktywny interfejs użytkownika**: 
     * Implementacja nawigacji za pomocą mapy geograficznej Polski, gdzie zdarzenia kliknięcia w kształty sterują filtrami tabel przestawnych
     * System dynamicznych kafelków KPI informujących o całkowitym wolumenie sprzedaży, liczbie transakcji oraz średniej wartości koszyka.
@@ -22,6 +21,6 @@ Projekt został podzielony na moduły tematyczne w celu zachowania czytelności 
 
 ## Instrukcja wdrożenia
 1. Skopiować plik `Raport sprzedażowy.xlsm` oraz katalog `data` na dysk lokalny.
-2. [cite_start]Otworzyć arkusz i uruchomić procedurę główną `ZbudujRaport`.
-3. [cite_start]Wybrać pliki tekstowe do analizy z folderu źródłowego.
-4. [cite_start]Po zakończeniu importu system automatycznie wygeneruje dashboard oraz umożliwi eksport wyników do formatu PDF.
+2. Otworzyć arkusz i uruchomić procedurę główną `ZbudujRaport`.
+3. Wybrać pliki tekstowe do analizy z folderu źródłowego.
+4. Po zakończeniu importu system automatycznie wygeneruje dashboard oraz umożliwi eksport wyników do formatu PDF.
